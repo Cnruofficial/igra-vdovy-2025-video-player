@@ -2,19 +2,41 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Тест Playerjs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Игра Вдовы (2024) — Смотреть онлайн бесплатно</title>
+  <meta name="description" content="Безупречный образ женщины дает трещину, когда ее мужа находят мертвым. Этот триллер о тайной двойной жизни основан на реальных событиях." />
+
   <style>
-    #player { width: 640px; height: 360px; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #player {
+      width: 90vw;
+      max-width: 960px;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
   </style>
 </head>
 <body>
+
   <div id="player"></div>
+
   <script src="https://cdn.jsdelivr.net/npm/playerjs@latest/playerjs.js"></script>
   <script>
     new Playerjs({
       id: "player",
-      file: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4"
+      file: "https://pixeldrain.com/api/file/Xns16kPC?raw=true",
+      poster: "https://i.postimg.cc/XvKrGTGS/A-widow-s-game.jpg"
     });
   </script>
+
 </body>
 </html>
